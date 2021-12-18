@@ -23,6 +23,14 @@ export default {
 			if (a.suit.sortNum === b.suit.sortNum) return a.rank.sortNum - b.rank.sortNum;
 		});
 	},
+	shuffle: (pile) => {
+		for (let i = pile.length - 1; i > 0;i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			const temp = pile[i];
+			pile[i] = pile[j];
+			pile[j] = temp;
+		}
+	},
 	Card,
 	Deck,
 	Rank,

@@ -1,8 +1,6 @@
-# node-playing-cards
+# card-deck
 
-Simple playing card library. Deal, shuffle or create cards easily.
-
-To install and use the module, type `npm install node-deck` in the terminal and add `const nodeDeck = require('node-deck');` in your code.
+Simple playing card library. Deal, shuffle or create decks fast.
 
 ## Documentation
 
@@ -115,7 +113,7 @@ deck.reset();
 
 #### shuffle
 
-Randomize the order of remaining cards using the **Fisher-Yates Algorithm**.
+Randomize the order of remaining cards using the Fisher-Yates Algorithm.
 
 ```js
 deck.shuffle();
@@ -169,8 +167,8 @@ Sorts the hand first by suits, then by ranks in the suit. Sorts in ascending ord
 var hand = [8♡, 5♧, 8♤, 5♤];
 
 nodeDeck.sortBySuit(hand);
-// suit phase         => [8♤, 8♡, 5♧, 5♤]
-// rank phase (final) => [8♤, 8♡, 5♤, 5♧]
+// suit phase         => [8♤, 5♤, 5♧, 8♡]
+// rank phase (final) => [5♤, 8♤, 5♧, 8♡]
 ```
 
 ## Custom Decks
