@@ -15,6 +15,7 @@ export default class Deck {
 		this.cards = cards;
 		this.cards.push(...jokers);
 		this.initialCards = [...this.cards];
+		this.jokerCount = _jokerCount;
 	}
 
 	get remainingLength() {

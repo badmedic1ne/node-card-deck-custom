@@ -2,7 +2,7 @@ import Card from '../card.js';
 import Rank from '../rank.js';
 import Suit from '../suit.js';
 
-export const ranks = [
+const ranks = [
 	new Rank('A', 'Ace', 14),
 	new Rank('2', 'Two', 2),
 	new Rank('3', 'Three', 3),
@@ -18,21 +18,17 @@ export const ranks = [
 	new Rank('K', 'King', 13),
 ]
 
-export const suits = [
+const suits = [
 	new Suit('Clubs', '\u2667', 2),
 	new Suit('Diamonds', '\u2662', 3),
 	new Suit('Hearts', '\u2661', 4),
 	new Suit('Spades', '\u2664', 1)
 ]
 
-export var cards = [];
+var cards = [];
 
-ranks.forEach(rank => {
-	suits.forEach(suit => {
-		cards.push(new Card(rank, suit));
-	})
-})
+ranks.forEach(rank => suits.forEach(suit => cards.push(new Card(rank, suit))));
 
-export const joker = new Card(new Rank('Joker', 'Joker', 15), new Suit('\u00a7', '\u00a7', 0));
+const joker = new Card(new Rank('Joker', 'Joker', 15), new Suit('\u00a7', '\u00a7', 0));
 
-export default { cards: cards, joker: joker, ranks: ranks, suits: suits }
+export default { cards, joker, ranks, suits }
