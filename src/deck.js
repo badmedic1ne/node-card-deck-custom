@@ -14,7 +14,6 @@ export default class Deck {
 
 		this.cards = cards;
 		this.cards.push(...jokers);
-
 		this.initialCards = [...this.cards];
 	}
 
@@ -40,8 +39,6 @@ export default class Deck {
 
 		for (let i = 0; i < count; i++) {
 			hands.forEach(hand => {
-				if (!Array.isArray(hand)) throw new Error('Deck: Invalid hands to deal cards, must be an Array of Arrays');
-
 				hand.push(...this.cards.splice(0, 1));
 			});
 		}

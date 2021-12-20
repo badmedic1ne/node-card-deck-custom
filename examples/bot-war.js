@@ -1,6 +1,6 @@
-import nodeDeck from "../index.js";
+import cardDeck from "../index.js";
 
-const deck = new nodeDeck.Deck(0, 3);
+const deck = new cardDeck.Deck(0, 3);
 
 console.log(deck.remainingLength);
 

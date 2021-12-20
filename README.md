@@ -1,6 +1,6 @@
 # card-deck
 
-Simple playing card library. Deal, shuffle or create decks fast.
+Simple playing card library. Deal, shuffle cards or create decks.
 
 ## Documentation
 
@@ -48,9 +48,9 @@ Class that epresents a deck of playing cards.
 * `_deck` object with cards, ranks, suits and jokers. Default `./src/ddecks/standard`
 
 ```js
-const Deck = require('node-deck');
+const cardDeck = require('card-deck');
 
-var deck = new Deck(3, 2);        // 3 jokers, 2 times the default deck
+var deck = new cardDeck.Deck(3, 2);        // 3 jokers, 2 times the default deck
 ```
 
 #### deal
@@ -118,6 +118,11 @@ Randomize the order of remaining cards using the Fisher-Yates Algorithm.
 ```js
 deck.shuffle();
 ```
+
+#### Properties
+
+* `deck.cards` array of cards in deck
+* `deck.initialCards` array of cards used in `deck.restart()`
 
 ### Rank
 
