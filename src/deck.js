@@ -1,6 +1,6 @@
-import { cards, joker } from './decks/standard.js'
+const { cards, joker } = require('./decks/standard');
 
-export default class Deck {
+module.exports = class Deck {
 	constructor(_jokerCount = 0, _numOfDecks = 1, _deck = { cards, joker }) {
 		var jokers = [],
 		    cards = [];

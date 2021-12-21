@@ -55,7 +55,7 @@ Class that epresents a deck of playing cards.
 * `_deck` object with cards, ranks, suits and jokers. Default `./src/ddecks/standard`
 
 ```js
-const cardDeck = require('card-deck');
+const cardDeck = require('node-card-deck');
 
 var deck = new Deck(3, 2);        // 3 jokers, 2 default decks
 ```

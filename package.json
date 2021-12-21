@@ -1,12 +1,11 @@
 {
   "name": "node-card-deck",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple playing card library. Deal, shuffle cards or create decks",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "SpaceEngie",
-  "license": "MIT",
-  "type": "module"
+  "license": "MIT"
 }

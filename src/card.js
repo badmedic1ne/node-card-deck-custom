@@ -1,7 +1,7 @@
-import Rank from './rank.js';
-import Suit from './suit.js';
+const Rank = require('./rank.js');
+const Suit = require('./suit.js');
 
-export default class Card {
+module.exports = class Card {
 	constructor(_rank, _suit) {
 		if (!(_rank instanceof Rank)) throw new Error('Card: Invalid card rank provided, must be an instance of Rank');
 		if (!(_suit instanceof Suit)) throw new Error('Card: Invalid card suit provided, must be an instance of Suit');

@@ -1,4 +1,4 @@
-import cardDeck from '../index.js';
+const cardDeck = require('../index.js');
 
 const deck = new cardDeck.Deck();
 var hand1 = [],

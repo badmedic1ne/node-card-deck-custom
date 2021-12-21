@@ -1,4 +1,4 @@
-export default class Rank {
+module.exports = class Rank {
 	constructor(_shortName, _longName, _sortNum) {
 		this.shortName = _shortName;
 		this.longName = _longName;

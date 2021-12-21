@@ -1,11 +1,11 @@
-import Card from './src/card.js';
-import Deck from './src/deck.js';
-import Rank from './src/rank.js';
-import Suit from './src/suit.js';
+const Card = require('./src/card.js');
+const Deck = require('./src/deck.js');
+const Rank = require('./src/rank.js');
+const Suit = require('./src/suit.js');
 
-import standard from './src/decks/standard.js';
+const standard = require('./src/decks/standard.js');
 
-export default {
+module.exports = {
 	decks: {
 		standard
 	},

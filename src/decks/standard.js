@@ -1,6 +1,6 @@
-import Card from '../card.js';
-import Rank from '../rank.js';
-import Suit from '../suit.js';
+const Card = require('../card.js');
+const Rank = require('../rank.js');
+const Suit = require('../suit.js');
 
 const ranks = [
 	new Rank('A', 'Ace', 14),
@@ -31,4 +31,4 @@ ranks.forEach(rank => suits.forEach(suit => cards.push(new Card(rank, suit))));
 
 const joker = new Card(new Rank('Joker', 'Joker', 15), new Suit('\u00a7', '\u00a7', 0));
 
-export default { cards, joker, ranks, suits }
+module.exports = { cards, joker, ranks, suits };
