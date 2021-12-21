@@ -33,7 +33,7 @@ Returns the number of remaining cards in deck
 Returns a string consisting of the card's rank `_shortName` and suit's `_shortName`
 
 ```js
-card.displayShort        // K♤
+card.displayShort        // K♤ <= \u2664
 ```
 
 ### displayText

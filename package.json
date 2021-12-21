@@ -1,6 +1,6 @@
 {
-  "name": "card-deck",
-  "version": "1.0.0",
+  "name": "node-card-deck",
+  "version": "1.0.1",
   "description": "Simple playing card library. Deal, shuffle cards or create decks",
   "main": "index.js",
   "scripts": {
