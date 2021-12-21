@@ -1,6 +1,13 @@
-# card-deck
+# node-card-deck
 
 Simple playing card library. Deal, shuffle cards or create decks.
+
+Type `npm i node-card-deck` in a terminal.
+
+```js
+const cardDeck = require('node-card-deck');
+const { Card, Deck, Rank, Suit } = cardDeck;
+```
 
 ## Documentation
 
@@ -50,7 +57,7 @@ Class that epresents a deck of playing cards.
 ```js
 const cardDeck = require('card-deck');
 
-var deck = new cardDeck.Deck(3, 2);        // 3 jokers, 2 times the default deck
+var deck = new Deck(3, 2);        // 3 jokers, 2 default decks
 ```
 
 #### deal
