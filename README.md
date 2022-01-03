@@ -9,6 +9,8 @@ const cardDeck = require('node-card-deck');
 const { Card, Deck, Rank, Suit } = cardDeck;
 ```
 
+See usage examples.
+
 ## Documentation
 
 ### Card

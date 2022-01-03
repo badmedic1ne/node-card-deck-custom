@@ -1,4 +1,4 @@
-const cardDeck = require('../index');
+const cardDeck = require('../src/index');
 const deck = new cardDeck.Deck();
 
 console.log(deck.remainingLength);

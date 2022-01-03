@@ -1,9 +1,9 @@
-const Card = require('./src/card.js');
-const Deck = require('./src/deck.js');
-const Rank = require('./src/rank.js');
-const Suit = require('./src/suit.js');
+const Card = require('./card.js');
+const Deck = require('./deck.js');
+const Rank = require('./rank.js');
+const Suit = require('./suit.js');
 
-const standard = require('./src/decks/standard.js');
+const standard = require('./decks/standard.js');
 
 module.exports = {
 	decks: {

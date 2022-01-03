@@ -31,4 +31,9 @@ ranks.forEach(rank => suits.forEach(suit => cards.push(new Card(rank, suit))));
 
 const joker = new Card(new Rank('Joker', 'Joker', 15), new Suit('\u00a7', '\u00a7', 0));
 
-module.exports = { cards, joker, ranks, suits };
+module.exports = {
+	cards,
+	joker,
+	ranks,
+	suits
+};
