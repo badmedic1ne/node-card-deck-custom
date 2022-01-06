@@ -13,11 +13,20 @@ See usage examples.
 
 ## Documentation
 
+### Table of contents
+
+* [Card](#card)
+* [Deck](#deck)
+* [Rank](#rank)
+* [Suit](#suit)
+* [Other methods](#other-methods)
+* [Custom decks](#custom-Decks)
+
+<a name="card"></a>
+
 ### Card
 
 Card class
-
-#### constructor
 
 * `_rank` Rank class
 * `_suit` Suit class
@@ -46,11 +55,11 @@ Returns a string consisting of the cards rank `_longName` and suits `_name`
 card.displayText        // King of Spades
 ```
 
+<a name="deck"></a>
+
 ### Deck
 
 Class that epresents a deck of playing cards.
-
-#### constructor
 
 * `_jokerCount` the number of Jokers in the deck. Default `0`
 * `_numOfDecks` number of decks in Deck instance. Default `1`
@@ -133,11 +142,11 @@ deck.shuffle();
 * `deck.cards` array of cards in deck
 * `deck.initialCards` array of cards used in `deck.restart()`
 
+<a name="rank"></a>
+
 ### Rank
 
 Rank class
-
-#### constructor
 
 * `_shortName` name displayed in `displayShort` Card getter.
 * `_longName` name displayed in `displayText` Card getter.
@@ -147,21 +156,25 @@ Rank class
 const rank = new Rank('K', 'King', 13);
 ```
 
+<a name="suit"></a>
+
 ### Suit
 
 Suit class
 
-#### constructor
-
 * `_name` name displayed in `displayText` Card getter.
-* `_shortName` shortName character displayed in `displayShort` Card getter.
+* `_shortName` shortName character displayed in Card's `displayShort` method.
 * `_sortNum` used to differentiate card suits.
 
 ```js
 const suit = new Suit('Spades', '\u2664', 1);
 ```
 
-### sortByRank
+<a name="other-methods"></a>
+
+### Other methods
+
+#### sortByRank
 
 Sorts the hand first by ranks, then by suits in the rank. Sorts in ascending order.
 
@@ -173,7 +186,7 @@ nodeDeck.sortByRank(hand);
 // suit phase (final) => [8♤, 8♡, 5♤, 5♧]
 ```
 
-### sortBySuit
+#### sortBySuit
 
 Sorts the hand first by suits, then by ranks in the suit. Sorts in ascending order.
 
@@ -185,14 +198,22 @@ nodeDeck.sortBySuit(hand);
 // rank phase (final) => [5♤, 8♤, 5♧, 8♡]
 ```
 
+#### shuffle
+
+Shuffles an array of cards.
+
+See [shuffle in Deck class](#deck) for more information.
+
+<a name="custom decks"></a>
+
 ## Custom Decks
 
 All custom decks should have their own:
 
-* suits
-* ranks
-* jokers (if you plan on using them)
-* cards (constructed using the deck's ranks and suits)
+* Suits
+* Ranks
+* Jokers (if you plan on using them)
+* Cards (constructed using the deck's Ranks and Suits)
 
 To use your custom deck, create a new instance of the Deck class with the custom deck set as the `_deck` argument
 

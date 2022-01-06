@@ -1,3 +1,5 @@
+"use strict";
+
 const { cards, joker } = require('./decks/standard');
 
 module.exports = class Deck {

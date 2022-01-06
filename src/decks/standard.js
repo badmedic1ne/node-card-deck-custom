@@ -1,9 +1,10 @@
+"use strict";
+
 const Card = require('../card.js');
 const Rank = require('../rank.js');
 const Suit = require('../suit.js');
 
 const ranks = [
-	new Rank('A', 'Ace', 14),
 	new Rank('2', 'Two', 2),
 	new Rank('3', 'Three', 3),
 	new Rank('4', 'Four', 4),
@@ -16,6 +17,7 @@ const ranks = [
 	new Rank('J', 'Jack', 11),
 	new Rank('Q', 'Queen', 12),
 	new Rank('K', 'King', 13),
+	new Rank('A', 'Ace', 14)
 ]
 
 const suits = [
