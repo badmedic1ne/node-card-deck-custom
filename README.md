@@ -9,18 +9,17 @@ const cardDeck = require('node-card-deck');
 const { Card, Deck, Rank, Suit } = cardDeck;
 ```
 
-See usage examples.
-
-## Documentation
-
-### Table of contents
+## Table of contents
 
 * [Card](#card)
 * [Deck](#deck)
 * [Rank](#rank)
 * [Suit](#suit)
-* [Other methods](#other-methods)
+* [Other functions](#other-methods)
 * [Custom decks](#custom-Decks)
+* [Examples](#examples)
+
+## Documentation
 
 <a name="card"></a>
 
@@ -241,6 +240,13 @@ const joker = new Card(new Rank('Joker', 'Joker', 15), new Suit('\u00a7', '\u00a
 
 const deck = new Deck(0, 1, { cards, joker });
 ```
+
+<a name="examples"></a>
+
+## Examples
+
+* [bot-war](/examples/bot-war.js)
+* [showcase](/examples/showcase.js)
 
 ## Contribute
 

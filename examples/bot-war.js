@@ -1,3 +1,17 @@
+/*
+ * bots compare cards one by one,
+ * bot with a better card (higher rank) gets both cards
+ * if cards are equal, each bot places 2 cards and compares the last placed,
+ * bot with a better card gets all of the cards
+ *
+ * eg. bot1   8-8   bot2
+ *       A ?? 8-8 ?? 10
+ * bot1 wins and gets the cards (Ace > 10)
+ *
+ * the game continues until a bot is out of cards
+ */
+
+
 const cardDeck = require('../src/index');
 const deck = new cardDeck.Deck();
 
