@@ -1,9 +1,9 @@
 "use strict";
 
-const { cards, joker } = require('./decks/standard');
+const { cards, joker } = require('./decks/skipbo.js');
 
 module.exports = class Deck {
-	constructor(_jokerCount = 0, _numOfDecks = 1, _deck = { cards, joker }) {
+	constructor(_jokerCount = 18, _numOfDecks = 12, _deck = { cards, joker }) {
 		var jokers = [],
 		    cards = [];
 		for (let i = 0; i < _jokerCount; i++) {
