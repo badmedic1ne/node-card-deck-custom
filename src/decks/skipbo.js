@@ -25,7 +25,7 @@ var cards = [];
 
 ranks.forEach(rank => cards.push(new Card(rank)));
 
-const joker = new Card(new Rank('SkipBo', 'SkipBo', 13, '../assets/sb.png');
+const joker = new Card(new Rank('SkipBo', 'SkipBo', 13, '../assets/sb.png'));
 
 module.exports = {
 	cards,

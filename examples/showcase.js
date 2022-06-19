@@ -18,8 +18,8 @@ deck.insert(hand1.splice(0, 2));
 console.log(`Inserted first two card from hand1 back to the deck, hand1 has now ${hand1.length} cards`);
 console.log('------------------------------------------');
 
-cardDeck.sortByRank(hand1);
-cardDeck.sortBySuit(hand2);
+//cardDeck.sortByRank(hand1);
+//cardDeck.sortBySuit(hand2);
 
 console.log('hand1, sorted by rank:');
 hand1.forEach(card => console.log(card.displayShort));
